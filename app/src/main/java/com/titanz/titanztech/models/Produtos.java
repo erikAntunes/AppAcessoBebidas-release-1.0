@@ -12,6 +12,16 @@ public class Produtos implements Serializable {
 
     private String imagem;
 
+    private String valor;
+
+    public String getValor() {
+        return valor;
+    }
+
+    public void setValor(String valor) {
+        this.valor = valor;
+    }
+
     public String getImagem() {
         return imagem;
     }

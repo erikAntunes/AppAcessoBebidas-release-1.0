@@ -24,11 +24,12 @@
     </de.hdodenhof.circleimageview.CircleImageView>
 
     <com.google.android.material.card.MaterialCardView
-        android:layout_marginTop="5dp"
+        android:id="@+id/materialCardView3"
         android:layout_width="match_parent"
-        android:layout_height="350dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
+        android:layout_height="250dp"
+        android:layout_marginBottom="100dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginEnd="22dp"
         app:cardCornerRadius="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -63,10 +64,10 @@
         android:id="@+id/nome_detalhes_servico_textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="390dp"
         android:layout_marginStart="40dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="40dp"
+        android:layout_marginBottom="390dp"
         android:gravity="center"
         android:text="TITANZ TECH"
         android:textColor="@color/colorPrimary"
@@ -74,8 +75,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/detalhes_servicos_circleImageView" />
+        app:layout_constraintTop_toBottomOf="@+id/detalhes_servicos_circleImageView"
+        app:layout_constraintVertical_bias="0.134" />
 
     <ImageView
         android:id="@+id/whatsapp_button_servicos_imageView"
@@ -108,5 +111,30 @@
         app:layout_constraintBottom_toTopOf="@+id/whatsapp_button_servicos_imageView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/detalhes_servicos_circleImageView" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialCardView3">
+
+        <TextView
+            android:id="@+id/preco_detalhes_servicos_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="R$ 500,00"
+            android:textColor="@color/colorAccent"
+            android:textSize="27sp"
+            android:textStyle="bold" />
+
+    </com.google.android.material.card.MaterialCardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -24,6 +24,7 @@ public class DetalhesServicosActivity extends AppCompatActivity {
     private CircleImageView servicoImageView;
     private TextView detalheServicoTextView;
     private TextView nomeDetalheServicoTextView;
+    private TextView precoTextView;
     private ImageView whatsappButton;
     private ImageView homeButtonServicos;
 
@@ -51,6 +52,7 @@ public class DetalhesServicosActivity extends AppCompatActivity {
         servicoImageView = findViewById(R.id.detalhes_servicos_circleImageView);
         detalheServicoTextView = findViewById(R.id.detalhes_servico_textView);
         nomeDetalheServicoTextView = findViewById(R.id.nome_detalhes_servico_textView);
+        precoTextView = findViewById(R.id.preco_detalhes_servicos_textView);
 
         whatsappButton = findViewById(R.id.whatsapp_button_servicos_imageView);
         whatsappButton.setOnClickListener(new View.OnClickListener() {
@@ -76,6 +78,7 @@ public class DetalhesServicosActivity extends AppCompatActivity {
 
         Produtos servico = (Produtos) bundle.getSerializable("SERVICOS");
 
+        precoTextView.setText(servico.getValor());
         nomeDetalheServicoTextView.setText(servico.getNome());
         detalheServicoTextView.setText(servico.getDescricao());
         Picasso.get().load(servico.getImagem()).into(servicoImageView);

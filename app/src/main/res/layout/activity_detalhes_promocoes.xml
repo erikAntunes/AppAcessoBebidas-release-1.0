@@ -128,7 +128,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:padding="10dp"
-            android:text="R$ 500,00 em até 3x sem juros"
+            android:text="R$ 500,00"
             android:textColor="@color/colorAccent"
             android:textSize="27sp"
             android:textStyle="bold" />
