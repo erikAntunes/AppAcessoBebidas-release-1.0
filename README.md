@@ -1,5 +1,4 @@
-# AppTitanzTech-release-1.0
+# Acesso Bebidas
 
-Assistência especializada em Desenvolvimento de Aplicativos Android e  computadores de alta performance. 
-Nós trabalhamos para solucionar todos os problemas relacionados a área de informática, visando sempre executar um serviço de qualidade, 
-acessível e com foco na satisfação do cliente.
+Repositório dedicado ao aplicativo mobile Android da Distrituidora de Bebidas, Acesso Bebidas.
+A Acesso Bebidas é uma empresa focada em distribuir bebidas originais, com o melhor preço da região Sul de São Paulo.
