@@ -1,8 +1,8 @@
 package com.titanz.titanztech.interfaces;
-import com.titanz.titanztech.models.Promocoes;
+import com.titanz.titanztech.models.Combos;
 
 public interface PromocoesListener {
 
-    void onPromocaoClicada(Promocoes promocao);
+    void onPromocaoClicada(Combos promocao);
 
 }

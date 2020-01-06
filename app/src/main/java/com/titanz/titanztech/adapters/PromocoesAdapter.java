@@ -8,24 +8,21 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.squareup.picasso.Picasso;
 import com.titanz.titanztech.R;
 import com.titanz.titanztech.interfaces.PromocoesListener;
-import com.titanz.titanztech.models.Promocoes;
+import com.titanz.titanztech.models.Combos;
 
 import java.util.List;
-
-import de.hdodenhof.circleimageview.CircleImageView;
 
 public class PromocoesAdapter extends RecyclerView.Adapter<PromocoesAdapter.DetalhePromocoesViewHolder> {
 
 
 
-    private List<Promocoes> listaPromocoes;
+    private List<Combos> listaPromocoes;
 
     private PromocoesListener promocoesListener;
 
-    public PromocoesAdapter(List<Promocoes> listaPromocoes, PromocoesListener promocoesListener){
+    public PromocoesAdapter(List<Combos> listaPromocoes, PromocoesListener promocoesListener){
 
         this.promocoesListener = promocoesListener;
         this.listaPromocoes = listaPromocoes;
@@ -48,9 +45,9 @@ public class PromocoesAdapter extends RecyclerView.Adapter<PromocoesAdapter.Deta
 
     @Override
     public void onBindViewHolder(@NonNull DetalhePromocoesViewHolder detalhePromocoesViewHolder, final int i) {
-        final Promocoes promocoes = listaPromocoes.get(i);
+        final Combos combos = listaPromocoes.get(i);
 
-        detalhePromocoesViewHolder.setupPromocoes(promocoes);
+        detalhePromocoesViewHolder.setupPromocoes(combos);
 
         detalhePromocoesViewHolder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -85,10 +82,10 @@ public class PromocoesAdapter extends RecyclerView.Adapter<PromocoesAdapter.Deta
 
         }
 
-        public void setupPromocoes(Promocoes promocoes){
+        public void setupPromocoes(Combos combos){
 
-            textValorPromocoesView.setText(promocoes.getValor());
-            texNomePromocoesView.setText(promocoes.getNome());
+            textValorPromocoesView.setText(combos.getValor());
+            texNomePromocoesView.setText(combos.getNome());
 
         }
 

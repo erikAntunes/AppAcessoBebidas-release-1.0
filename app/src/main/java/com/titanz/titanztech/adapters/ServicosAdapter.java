@@ -11,7 +11,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.squareup.picasso.Picasso;
 import com.titanz.titanztech.R;
 import com.titanz.titanztech.interfaces.ServicosListener;
-import com.titanz.titanztech.models.Servicos;
+import com.titanz.titanztech.models.Produtos;
 
 import java.util.List;
 
@@ -20,11 +20,11 @@ import de.hdodenhof.circleimageview.CircleImageView;
 public class ServicosAdapter extends RecyclerView.Adapter<ServicosAdapter.DetalheServicosViewHolder> {
 
 
-    private List<Servicos> listaServicos;
+    private List<Produtos> listaServicos;
 
     private ServicosListener servicosListener;
 
-    public ServicosAdapter(List<Servicos> listaServicos, ServicosListener servicosListener){
+    public ServicosAdapter(List<Produtos> listaServicos, ServicosListener servicosListener){
 
         this.servicosListener = servicosListener;
         this.listaServicos = listaServicos;
@@ -46,9 +46,9 @@ public class ServicosAdapter extends RecyclerView.Adapter<ServicosAdapter.Detalh
 
     @Override
     public void onBindViewHolder(@NonNull DetalheServicosViewHolder detalheServicosViewHolder, final int i) {
-        final Servicos servicos = listaServicos.get(i);
+        final Produtos produtos = listaServicos.get(i);
 
-        detalheServicosViewHolder.setupServicos(servicos);
+        detalheServicosViewHolder.setupServicos(produtos);
 
         detalheServicosViewHolder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -80,11 +80,11 @@ public class ServicosAdapter extends RecyclerView.Adapter<ServicosAdapter.Detalh
             servicosImageView = itemView.findViewById(R.id.servicos_imageView_id);
         }
 
-        public void setupServicos(Servicos servicos){
+        public void setupServicos(Produtos produtos){
 
-            textDescricaoServicosView.setText(servicos.getNome());
-            textIdServicosView.setText(servicos.getId());
-            Picasso.get().load(servicos.getImagem()).into(servicosImageView);
+            textDescricaoServicosView.setText(produtos.getNome());
+            textIdServicosView.setText(produtos.getId());
+            Picasso.get().load(produtos.getImagem()).into(servicosImageView);
         }
 
     }

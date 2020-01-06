@@ -14,7 +14,7 @@ import android.widget.Toast;
 
 import com.squareup.picasso.Picasso;
 import com.titanz.titanztech.R;
-import com.titanz.titanztech.models.Promocoes;
+import com.titanz.titanztech.models.Combos;
 
 import cn.pedant.SweetAlert.SweetAlertDialog;
 import de.hdodenhof.circleimageview.CircleImageView;
@@ -74,7 +74,7 @@ public class DetalhesPromocoesActivity extends AppCompatActivity {
 
         Bundle bundle = intent.getExtras();
 
-        Promocoes promocao = (Promocoes) bundle.getSerializable("PROMOCOES");
+        Combos promocao = (Combos) bundle.getSerializable("PROMOCOES");
 
 
         nomeDetalhePromocoesTextView.setText(promocao.getNome());

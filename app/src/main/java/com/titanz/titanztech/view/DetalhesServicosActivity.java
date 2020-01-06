@@ -14,7 +14,7 @@ import android.widget.Toast;
 
 import com.squareup.picasso.Picasso;
 import com.titanz.titanztech.R;
-import com.titanz.titanztech.models.Servicos;
+import com.titanz.titanztech.models.Produtos;
 
 import cn.pedant.SweetAlert.SweetAlertDialog;
 import de.hdodenhof.circleimageview.CircleImageView;
@@ -74,7 +74,7 @@ public class DetalhesServicosActivity extends AppCompatActivity {
 
         Bundle bundle = intent.getExtras();
 
-        Servicos servico = (Servicos) bundle.getSerializable("SERVICOS");
+        Produtos servico = (Produtos) bundle.getSerializable("SERVICOS");
 
         nomeDetalheServicoTextView.setText(servico.getNome());
         detalheServicoTextView.setText(servico.getDescricao());

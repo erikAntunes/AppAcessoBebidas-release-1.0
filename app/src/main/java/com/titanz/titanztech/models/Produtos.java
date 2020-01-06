@@ -2,7 +2,7 @@ package com.titanz.titanztech.models;
 
 import java.io.Serializable;
 
-public class Servicos implements Serializable {
+public class Produtos implements Serializable {
 
     private String Nome;
 

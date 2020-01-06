@@ -2,7 +2,7 @@ package com.titanz.titanztech.models;
 
 import java.io.Serializable;
 
-public class Promocoes implements Serializable {
+public class Combos implements Serializable {
 
     private String nome;
 
