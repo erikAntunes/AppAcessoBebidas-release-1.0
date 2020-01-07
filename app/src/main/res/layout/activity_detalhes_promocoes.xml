@@ -28,8 +28,8 @@
         android:layout_width="match_parent"
         android:layout_marginBottom="200dp"
         android:layout_height="150dp"
-        android:layout_marginStart="22dp"
-        android:layout_marginEnd="22dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
         app:cardCornerRadius="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -53,7 +53,7 @@
                 android:padding="15dp"
                 android:text="Só salve quebrada vamos testar essa bagaça \n Mais uma linha sem informação decente \n muito bem ta tudo certo \n Só salve quebrada vamos testar essa bagaça \n Mais uma linha sem informação decente \n muito bem ta tudo certo \n Só salve quebrada vamos testar essa bagaça \n Mais uma linha sem informação decente \n muito bem ta tudo certo \n Só salve quebrada vamos testar essa bagaça \n Mais uma linha sem informação decente \n muito bem ta tudo certo"
                 android:textColor="@color/colorPrimaryDark"
-                android:textSize="23sp" />
+                android:textSize="20sp" />
 
         </ScrollView>
     </com.google.android.material.card.MaterialCardView>
@@ -116,7 +116,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
         android:layout_marginEnd="40dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="20dp"
         app:cardCornerRadius="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -130,7 +130,7 @@
             android:gravity="center"
             android:padding="10dp"
             android:text="R$ 500,00"
-            android:textColor="@color/colorAccent"
+            android:textColor="@color/colorPreco"
             android:textSize="27sp"
             android:textStyle="bold" />
 
@@ -150,7 +150,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:cardCornerRadius="20dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/materialCardView">
@@ -163,8 +163,7 @@
             android:padding="8dp"
             android:text="4un - Red Bull 250ml"
             android:textColor="@color/colorAccent"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+            android:textSize="20sp" />
 
     </com.google.android.material.card.MaterialCardView>
 
@@ -173,6 +172,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:cardCornerRadius="20dp"
+        android:layout_marginBottom="20dp"
         android:layout_marginTop="5dp"
         app:layout_constraintBottom_toTopOf="@+id/materialCardView5"
         app:layout_constraintEnd_toEndOf="parent"
@@ -187,8 +187,7 @@
             android:padding="8dp"
             android:text="4un - Gelo de Cocô ou Maracuja"
             android:textColor="@color/colorAccent"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+            android:textSize="20sp" />
 
     </com.google.android.material.card.MaterialCardView>
 

@@ -130,7 +130,7 @@
             android:gravity="center"
             android:padding="10dp"
             android:text="R$ 500,00"
-            android:textColor="@color/colorAccent"
+            android:textColor="@color/colorPreco"
             android:textSize="27sp"
             android:textStyle="bold" />
 

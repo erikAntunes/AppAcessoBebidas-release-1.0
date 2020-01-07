@@ -14,6 +14,26 @@ public class Combos implements Serializable {
 
     private String valor;
 
+    private String energetico;
+
+    private String gelo;
+
+    public String getEnergetico() {
+        return energetico;
+    }
+
+    public void setEnergetico(String energetico) {
+        this.energetico = energetico;
+    }
+
+    public String getGelo() {
+        return gelo;
+    }
+
+    public void setGelo(String gelo) {
+        this.gelo = gelo;
+    }
+
     public String getImagem() {
         return imagem;
     }
