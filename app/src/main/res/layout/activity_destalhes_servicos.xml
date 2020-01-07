@@ -50,10 +50,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
-                android:padding="15dp"
+                android:padding="10dp"
                 android:text="Só salve quebrada vamos testar essa bagaça \n Mais uma linha sem informação decente \n muito bem ta tudo certo \n Só salve quebrada vamos testar essa bagaça \n Mais uma linha sem informação decente \n muito bem ta tudo certo \n Só salve quebrada vamos testar essa bagaça \n Mais uma linha sem informação decente \n muito bem ta tudo certo \n Só salve quebrada vamos testar essa bagaça \n Mais uma linha sem informação decente \n muito bem ta tudo certo"
                 android:textColor="@color/colorPrimaryDark"
-                android:textSize="23sp" />
+                android:textSize="20sp" />
 
 
         </ScrollView>
@@ -95,6 +95,7 @@
         android:src="@drawable/button_voltar"
         android:layout_width="50dp"
         android:layout_height="50dp"
+        android:layout_marginBottom="20dp"
         app:layout_constraintBottom_toTopOf="@+id/nome_detalhes_servico_textView"
         app:layout_constraintEnd_toStartOf="@+id/detalhes_servicos_circleImageView"
         app:layout_constraintStart_toStartOf="parent"
@@ -117,7 +118,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:cardCornerRadius="20dp"
-        android:layout_marginRight="80dp"
+        android:layout_marginRight="60dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/materialCardView3">
@@ -139,7 +140,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:cardCornerRadius="20dp"
-        android:layout_marginLeft="50dp"
+        android:layout_marginLeft="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/materialCardView4"
         app:layout_constraintStart_toStartOf="parent"
@@ -157,5 +158,16 @@
             android:textStyle="bold" />
 
     </com.google.android.material.card.MaterialCardView>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/cicleView_servico_detalhes_classificacao"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/nome_detalhes_servico_textView"
+        app:layout_constraintEnd_toStartOf="@+id/detalhes_servicos_circleImageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/whatsapp_button_servicos_imageView"
+         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

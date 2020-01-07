@@ -22,6 +22,7 @@ import de.hdodenhof.circleimageview.CircleImageView;
 public class DetalhesServicosActivity extends AppCompatActivity {
 
     private CircleImageView servicoImageView;
+    private CircleImageView classificacaoCircleView;
     private TextView detalheServicoTextView;
     private TextView nomeDetalheServicoTextView;
     private TextView precoTextView;
@@ -55,6 +56,7 @@ public class DetalhesServicosActivity extends AppCompatActivity {
         nomeDetalheServicoTextView = findViewById(R.id.nome_detalhes_servico_textView);
         precoTextView = findViewById(R.id.preco_detalhes_servicos_textView);
         idVolumeTextView = findViewById(R.id.id_detalhes_servicos_textView);
+        classificacaoCircleView = findViewById(R.id.cicleView_servico_detalhes_classificacao);
 
         whatsappButton = findViewById(R.id.whatsapp_button_servicos_imageView);
         whatsappButton.setOnClickListener(new View.OnClickListener() {
@@ -85,6 +87,7 @@ public class DetalhesServicosActivity extends AppCompatActivity {
         nomeDetalheServicoTextView.setText(servico.getNome());
         detalheServicoTextView.setText(servico.getDescricao());
         Picasso.get().load(servico.getImagem()).into(servicoImageView);
+        Picasso.get().load(servico.getClassificacao()).into(classificacaoCircleView);
 
     }
 

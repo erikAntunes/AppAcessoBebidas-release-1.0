@@ -12,7 +12,17 @@ public class Produtos implements Serializable {
 
     private String imagem;
 
+    private String classificacao;
+
     private String valor;
+
+    public String getClassificacao() {
+        return classificacao;
+    }
+
+    public void setClassificacao(String classificacao) {
+        this.classificacao = classificacao;
+    }
 
     public String getValor() {
         return valor;
