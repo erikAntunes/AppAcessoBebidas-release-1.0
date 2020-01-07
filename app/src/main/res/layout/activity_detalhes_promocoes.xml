@@ -26,8 +26,8 @@
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/materialCardView"
         android:layout_width="match_parent"
-        android:layout_marginBottom="100dp"
-        android:layout_height="250dp"
+        android:layout_marginBottom="200dp"
+        android:layout_height="150dp"
         android:layout_marginStart="22dp"
         android:layout_marginEnd="22dp"
         app:cardCornerRadius="20dp"
@@ -87,19 +87,21 @@
 
     <ImageView
         android:id="@+id/home_button_promocoes_imageView"
-        android:src="@drawable/button_voltar"
         android:layout_width="50dp"
         android:layout_height="50dp"
+        android:src="@drawable/button_voltar"
         app:layout_constraintBottom_toTopOf="@+id/nome_detalhes_promocoes_textView"
         app:layout_constraintEnd_toStartOf="@+id/detalhes_promocoes_circleImageView"
+        app:layout_constraintHorizontal_bias="0.457"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.351" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Solicitar"
+        android:text="Pedir"
         android:textColor="@color/colorPrimary"
         android:textSize="20sp"
         android:layout_marginBottom="5dp"
@@ -109,7 +111,7 @@
 
 
     <com.google.android.material.card.MaterialCardView
-        android:layout_marginTop="10dp"
+        android:id="@+id/materialCardView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
@@ -119,8 +121,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/materialCardView">
+        app:layout_constraintStart_toStartOf="parent">
 
         <TextView
             android:id="@+id/preco_detalhes_promocoes_textView"
@@ -131,6 +132,62 @@
             android:text="R$ 500,00"
             android:textColor="@color/colorAccent"
             android:textSize="27sp"
+            android:textStyle="bold" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/cicleView_promocoes_detalhes_classificacao"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/detalhes_promocoes_circleImageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/home_button_promocoes_imageView" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/materialCardView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialCardView">
+
+        <TextView
+            android:id="@+id/gelo_detalhes_promocoes_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="4un - Red Bull 250ml"
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/materialCardView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/materialCardView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialCardView7">
+
+        <TextView
+            android:id="@+id/energetico_detalhes_promocoes_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="4un - Gelo de Cocô ou Maracuja"
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp"
             android:textStyle="bold" />
 
     </com.google.android.material.card.MaterialCardView>

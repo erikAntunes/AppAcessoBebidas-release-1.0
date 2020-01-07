@@ -92,10 +92,10 @@
 
     <ImageView
         android:id="@+id/home_button_servicos_imageView"
-        android:src="@drawable/button_voltar"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginBottom="20dp"
+        android:src="@drawable/button_voltar"
         app:layout_constraintBottom_toTopOf="@+id/nome_detalhes_servico_textView"
         app:layout_constraintEnd_toStartOf="@+id/detalhes_servicos_circleImageView"
         app:layout_constraintStart_toStartOf="parent"
@@ -164,10 +164,8 @@
         android:layout_width="80dp"
         android:layout_height="70dp"
         android:layout_marginTop="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/nome_detalhes_servico_textView"
         app:layout_constraintEnd_toStartOf="@+id/detalhes_servicos_circleImageView"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/whatsapp_button_servicos_imageView"
-         />
+        app:layout_constraintTop_toBottomOf="@+id/home_button_servicos_imageView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

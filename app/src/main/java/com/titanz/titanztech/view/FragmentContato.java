@@ -47,7 +47,7 @@ public class FragmentContato extends Fragment {
 
     public void irParaTitanz(){
 
-        String titanz = "+55 11986661870"; // use country code with your phone number
+        String titanz = "+55 11946961255"; // use country code with your phone number
         String url = "https://api.whatsapp.com/send?phone=" + titanz;
         try {
             PackageManager pm = getContext().getPackageManager();
