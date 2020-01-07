@@ -25,6 +25,7 @@ public class DetalhesServicosActivity extends AppCompatActivity {
     private TextView detalheServicoTextView;
     private TextView nomeDetalheServicoTextView;
     private TextView precoTextView;
+    private TextView idVolumeTextView;
     private ImageView whatsappButton;
     private ImageView homeButtonServicos;
 
@@ -53,6 +54,7 @@ public class DetalhesServicosActivity extends AppCompatActivity {
         detalheServicoTextView = findViewById(R.id.detalhes_servico_textView);
         nomeDetalheServicoTextView = findViewById(R.id.nome_detalhes_servico_textView);
         precoTextView = findViewById(R.id.preco_detalhes_servicos_textView);
+        idVolumeTextView = findViewById(R.id.id_detalhes_servicos_textView);
 
         whatsappButton = findViewById(R.id.whatsapp_button_servicos_imageView);
         whatsappButton.setOnClickListener(new View.OnClickListener() {
@@ -78,6 +80,7 @@ public class DetalhesServicosActivity extends AppCompatActivity {
 
         Produtos servico = (Produtos) bundle.getSerializable("SERVICOS");
 
+        idVolumeTextView.setText(servico.getId());
         precoTextView.setText(servico.getValor());
         nomeDetalheServicoTextView.setText(servico.getNome());
         detalheServicoTextView.setText(servico.getDescricao());
