@@ -73,7 +73,7 @@ public class DetalhesPromocoesActivity extends AppCompatActivity {
         nomeDetalhePromocoesTextView = findViewById(R.id.nome_detalhes_promocoes_textView);
         precoDetalhesPromocoesTextView = findViewById(R.id.preco_detalhes_promocoes_textView);
         classificacaoPromocaoImageView = findViewById(R.id.cicleView_promocoes_detalhes_classificacao);
-        Picasso.get().load("https://lh3.googleusercontent.com/6jsgD32Tm1c5CjskidPJFjdER7fbcbCUAbSw_omx_J7xuXNHBWBrLW13ehzXxCRksM_suRcvF8dgVuunnaYqGrdu3RV6O0Cq2gIxgdaD6GjZ5MIwTuhoQqSc9yjxjAK8cOcXXzKm6PfSn7ceWU33ByoGqsdRqti5ABdyAUjcnNlrDDTmbRdnGXhRfQWXUZtfOJTl5vSCirLqaKmFCiWMW1qNw2nybJvkjdH3u80hQr7FCn8C7_O1YzDfMVEgZPxLc6lUKm-HVq2rnN3XwZuj-J_jrCwQU3eUEfdSfUqkwa-xhTE_eRoQn86ExDySC36WNiAGG7ADZr-mEuz-5AqHC2k3qC7nDDbeUVseEB0Z59aR9rjlaq0B5C2lVaiKNeD5nI6AXz5zA6D3J2cRTvYJnYrXW4HXjw3ci7w-66a-w8heBM348F4soh3ssbDtqNv2wjK80X29QA2wPoTwuHsMhkpA-rOQpeegm3s9KMxpjGlbObxJiIKABmBCTlqCF-k5Xw49nt1dBZGXhQqJYM-fJSuiYcmAh8_NFB2k6HT8guyOHaYNwwfZhwb7Jc1V0Q3nDZpP9sDYai8ofHBWBWA-zW7QVNRQHW3gJ0uVXhSDnuvjM0FMR8nPUQhlz-OWi27-A_1lpGLXEdejnBHs_K52O365mZmbANWnZjOFHYF8IcTryXaJUNr2orJr4m9okCQ9XVe7SEbBnFti4LLM4pIvj6QacOAmCLQSF07Y59fGIBlJ8j-z=s800-no").into(classificacaoPromocaoImageView);
+        Picasso.get().load("https://lh3.googleusercontent.com/sXRxTyec4GQRxmOHmPb4vtGYZ5Pdj6tfiPmsfvsCXaiJE9dqHmeapNOiS_yyYyIYzeP0t4KHcuNUaLtuPnXcbJrMDKSf-fzKmGjMoPHDXTn8naIqfeQnrq0M-FaJWB8Fx82k7sb2MPnGd2zMoJFryDtGDAiJ_v1wBwFErZ3Mp0S4eqcbCB_Hwubo0ScZ4GlcMDxcYuFkOsscVgJpoKIDqZxGBEfDrJokskxIq7tBOT1AvKAbzlp0YoUwnVllfe8Xqwi4aMYQpj-lY6wGvntGYzj6W2Si42hfYcYmbS1MJDLWW6kcpmO_u6qHB3scwni9cnoXdmrgxz078Q0PLkVDkZk3o6t_OBTL4AQpLOuURKSCFVYmRFTzOXtklKffmKx9HtTBiKmrmLdTPxjQwO9i54Z3VtvBEuSiHsc9ScQi0fG4gHN3XO1stJN66ywwnhgIxCwwUjzJSLYQ2XIWs6TwNEQD4TAWtikZyFqnHkZ5eKJq1wmHSTCXiWlMvUByVMxS-fIakIcvyxn8s9FDPOrG1kKTCxwvaHQxL7SBGnd64IDhIwt1ZfQII9RuE6dSLzFUQsm8t0B3u5l4u8D7QELbdw36m4gJY4XWChfnfUO-LwlEsziWGDHXj61aWLMEiz4vlPXPikZva0A1No4NoynpQIU_rTY1rmCTrsqo2A6p9nVuCsEQd1j7iRw=s800-no").into(classificacaoPromocaoImageView);
         energeticoTextView = findViewById(R.id.energetico_detalhes_promocoes_textView);
         geloTextView = findViewById(R.id.gelo_detalhes_promocoes_textView);
 
@@ -124,7 +124,7 @@ public class DetalhesPromocoesActivity extends AppCompatActivity {
                 public void run() {
                     pDialog.dismiss();
                 }
-            },500);
+            },1000);
         } catch (PackageManager.NameNotFoundException e) {
             Toast.makeText(this, "... poxa o Whatsapp não está instalado!!!", Toast.LENGTH_SHORT).show();
             e.printStackTrace();
