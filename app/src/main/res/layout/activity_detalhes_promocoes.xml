@@ -16,26 +16,28 @@
         android:layout_height="170dp"
         android:layout_marginTop="16dp"
         android:src="@drawable/titanz_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.014">
 
     </de.hdodenhof.circleimageview.CircleImageView>
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/materialCardView"
         android:layout_width="match_parent"
-        android:layout_marginBottom="200dp"
         android:layout_height="150dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
+        android:layout_marginBottom="150dp"
         app:cardCornerRadius="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nome_detalhes_promocoes_textView">
+        app:layout_constraintTop_toBottomOf="@+id/detalhes_promocoes_circleImageView">
 
 
         <ScrollView
@@ -53,7 +55,8 @@
                 android:padding="15dp"
                 android:text="Só salve quebrada vamos testar essa bagaça \n Mais uma linha sem informação decente \n muito bem ta tudo certo \n Só salve quebrada vamos testar essa bagaça \n Mais uma linha sem informação decente \n muito bem ta tudo certo \n Só salve quebrada vamos testar essa bagaça \n Mais uma linha sem informação decente \n muito bem ta tudo certo \n Só salve quebrada vamos testar essa bagaça \n Mais uma linha sem informação decente \n muito bem ta tudo certo"
                 android:textColor="@color/colorPrimaryDark"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
         </ScrollView>
     </com.google.android.material.card.MaterialCardView>
@@ -63,17 +66,18 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
-        android:layout_marginBottom="350dp"
         android:layout_marginEnd="40dp"
         android:gravity="center"
         android:text="TITANZ TECH"
         android:textColor="@color/colorPrimary"
-        android:textSize="27sp"
+        android:textSize="25sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/materialCardView"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/detalhes_promocoes_circleImageView" />
+        app:layout_constraintTop_toBottomOf="@+id/detalhes_promocoes_circleImageView"
+        app:layout_constraintVertical_bias="0.595" />
 
     <ImageView
         android:id="@+id/whatsapp_button_promocoes_imageView"
@@ -150,7 +154,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:cardCornerRadius="20dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/materialCardView">
@@ -160,11 +164,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:padding="8dp"
-            android:textStyle="bold"
+            android:padding="6dp"
             android:text="4un - Red Bull 250ml"
             android:textColor="@color/colorAccent"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
     </com.google.android.material.card.MaterialCardView>
 
@@ -185,7 +189,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:padding="8dp"
+            android:padding="6dp"
             android:textStyle="bold"
             android:text="4un - Gelo de Cocô ou Maracuja"
             android:textColor="@color/colorAccent"

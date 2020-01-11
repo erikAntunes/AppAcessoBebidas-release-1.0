@@ -103,8 +103,8 @@ public class FragmentProdutos extends Fragment implements ServicosListener {
         produtosArrayList.add(produtos8);
 
         Produtos produtos9 = new Produtos();
-        produtos9.setNome("Gelo de Côco");
-        produtos9.setDescricao("Aquele Gelo de Côco( ou Maracujá ), para acompanhar uma das nossas ofertas de Blends Scotch Originais, e ter uma maravilhosa manhã sem dor de cabeça.");
+        produtos9.setNome("Gelo de Coco");
+        produtos9.setDescricao("Aquele Gelo de Coco( ou Maracujá ), para acompanhar uma das nossas ofertas de Blends Scotch Originais, e ter uma maravilhosa manhã sem dor de cabeça.");
         produtos9.setImagem("https://i.ibb.co/LND8LMv/gelo-de-coco-logo.png");
         produtos9.setClassificacao("https://i.ibb.co/GFSJdjD/classificacao-livre-logo.png");
         produtos9.setId("4un");

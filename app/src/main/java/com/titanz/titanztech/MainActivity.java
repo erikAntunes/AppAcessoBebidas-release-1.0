@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
             public void run() {
                 pDialog.dismiss();
             }
-        },2500);
+        },3000);
 
 
 

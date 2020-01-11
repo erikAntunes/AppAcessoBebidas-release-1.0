@@ -124,7 +124,7 @@ public class DetalhesPromocoesActivity extends AppCompatActivity {
                 public void run() {
                     pDialog.dismiss();
                 }
-            },1500);
+            },3500);
         } catch (PackageManager.NameNotFoundException e) {
             Toast.makeText(this, "... poxa o Whatsapp não está instalado!!!", Toast.LENGTH_SHORT).show();
             e.printStackTrace();

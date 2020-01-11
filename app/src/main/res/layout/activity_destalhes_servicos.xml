@@ -16,10 +16,12 @@
         android:layout_height="170dp"
         android:layout_marginTop="16dp"
         android:src="@drawable/titanz_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.025">
 
     </de.hdodenhof.circleimageview.CircleImageView>
 
@@ -27,14 +29,15 @@
         android:id="@+id/materialCardView3"
         android:layout_width="match_parent"
         android:layout_height="250dp"
-        android:layout_marginBottom="100dp"
+        android:layout_marginTop="10dp"
         android:layout_marginStart="22dp"
         android:layout_marginEnd="22dp"
+        android:layout_marginBottom="100dp"
         app:cardCornerRadius="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nome_detalhes_servico_textView">
+        app:layout_constraintTop_toBottomOf="@+id/detalhes_servicos_circleImageView">
 
 
         <ScrollView
@@ -65,20 +68,18 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
         android:layout_marginEnd="40dp"
-        android:layout_marginBottom="390dp"
         android:gravity="center"
         android:text="TITANZ TECH"
         android:textColor="@color/colorPrimary"
         android:textSize="30sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/materialCardView3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/detalhes_servicos_circleImageView"
-        app:layout_constraintVertical_bias="0.134" />
+        app:layout_constraintTop_toBottomOf="@+id/detalhes_servicos_circleImageView" />
 
     <ImageView
         android:id="@+id/whatsapp_button_servicos_imageView"
