@@ -15,7 +15,6 @@
         android:layout_width="170dp"
         android:layout_height="170dp"
         android:layout_marginTop="16dp"
-        android:src="@drawable/titanz_icon"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -83,7 +82,6 @@
 
     <ImageView
         android:id="@+id/whatsapp_button_servicos_imageView"
-        android:src="@drawable/whatsapp_button"
         android:layout_width="50dp"
         android:layout_height="50dp"
         app:layout_constraintBottom_toTopOf="@+id/nome_detalhes_servico_textView"
@@ -96,7 +94,6 @@
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginBottom="20dp"
-        android:src="@drawable/button_voltar"
         app:layout_constraintBottom_toTopOf="@+id/nome_detalhes_servico_textView"
         app:layout_constraintEnd_toStartOf="@+id/detalhes_servicos_circleImageView"
         app:layout_constraintStart_toStartOf="parent"
