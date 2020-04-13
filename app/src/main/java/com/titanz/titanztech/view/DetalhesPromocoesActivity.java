@@ -53,6 +53,7 @@ public class DetalhesPromocoesActivity extends AppCompatActivity {
         },1000);
 
         whatsappButton = findViewById(R.id.whatsapp_button_promocoes_imageView);
+        Picasso.get().load("https://i.ibb.co/Nm6cWdh/whatsapp-button.png").into(whatsappButton);
         whatsappButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -61,6 +62,7 @@ public class DetalhesPromocoesActivity extends AppCompatActivity {
         });
 
         homeButtonServicos = findViewById(R.id.home_button_promocoes_imageView);
+        Picasso.get().load("https://i.ibb.co/zZtYkQK/button-voltar.png").into(homeButtonServicos);
         homeButtonServicos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

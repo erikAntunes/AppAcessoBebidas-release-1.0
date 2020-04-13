@@ -8,11 +8,14 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.squareup.picasso.Picasso;
 import com.titanz.titanztech.R;
 import com.titanz.titanztech.interfaces.PromocoesListener;
 import com.titanz.titanztech.models.Combos;
 
 import java.util.List;
+
+import de.hdodenhof.circleimageview.CircleImageView;
 
 public class PromocoesAdapter extends RecyclerView.Adapter<PromocoesAdapter.DetalhePromocoesViewHolder> {
 
@@ -71,6 +74,8 @@ public class PromocoesAdapter extends RecyclerView.Adapter<PromocoesAdapter.Deta
 
         private TextView textValorPromocoesView;
 
+        private CircleImageView promoImageView;
+
 
 
         public DetalhePromocoesViewHolder(@NonNull View itemView) {
@@ -78,6 +83,7 @@ public class PromocoesAdapter extends RecyclerView.Adapter<PromocoesAdapter.Deta
 
             texNomePromocoesView = itemView.findViewById(R.id.textPromocoesNomeView_id);
             textValorPromocoesView = itemView.findViewById(R.id.textValorPromocoesView_id);
+            promoImageView =  itemView.findViewById(R.id.promocoes_imageView_id);
 
 
         }
@@ -86,6 +92,7 @@ public class PromocoesAdapter extends RecyclerView.Adapter<PromocoesAdapter.Deta
 
             textValorPromocoesView.setText(combos.getValor());
             texNomePromocoesView.setText(combos.getNome());
+            Picasso.get().load("https://i.ibb.co/6sdf8sR/promo-logo.png").into(promoImageView);
 
         }
 
