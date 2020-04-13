@@ -14,6 +14,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import com.squareup.picasso.Picasso;
 import com.titanz.titanztech.R;
 
 import cn.pedant.SweetAlert.SweetAlertDialog;
@@ -32,7 +33,7 @@ public class FragmentContato extends Fragment {
         view.setBackgroundColor(getResources().getColor(android.R.color.background_dark));
 
         whatsappButton = view.findViewById(R.id.titanz_whatsapp_button_id);
-
+        Picasso.get().load("https://i.ibb.co/Nm6cWdh/whatsapp-button.png").into(whatsappButton);
         whatsappButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

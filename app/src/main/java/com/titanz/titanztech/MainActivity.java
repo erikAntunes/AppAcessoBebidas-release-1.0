@@ -14,17 +14,20 @@ import android.view.WindowManager;
 
 import com.google.android.material.tabs.TabLayout;
 
+import com.squareup.picasso.Picasso;
 import com.titanz.titanztech.adapters.ViewPagerAdapter;
 import com.titanz.titanztech.view.FragmentProdutos;
 import com.titanz.titanztech.view.FragmentCombos;
 import com.titanz.titanztech.view.FragmentContato;
 
 import cn.pedant.SweetAlert.SweetAlertDialog;
+import de.hdodenhof.circleimageview.CircleImageView;
 
 public class MainActivity extends AppCompatActivity {
 
     private TabLayout tabLayout;
     private ViewPager viewPager;
+    private CircleImageView logoImageView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +38,9 @@ public class MainActivity extends AppCompatActivity {
 
         tabLayout = findViewById(R.id.tablayout_main_id);
         viewPager = findViewById(R.id.viewpager_main_id);
+        logoImageView = findViewById(R.id.logo_main_id);
+        Picasso.get().load("https://i.ibb.co/h1tjBpC/logo.png").into(logoImageView);
+
 
         ActionBar bar = getSupportActionBar();
         bar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#000000")));
