@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         tabLayout = findViewById(R.id.tablayout_main_id);
         viewPager = findViewById(R.id.viewpager_main_id);
         logoImageView = findViewById(R.id.logo_main_id);
-        Picasso.get().load("https://i.ibb.co/h1tjBpC/logo.png").into(logoImageView);
+        Picasso.get().load("https://i.ibb.co/KNSK8vh/adega-do-bigao.png").into(logoImageView);
 
 
         ActionBar bar = getSupportActionBar();

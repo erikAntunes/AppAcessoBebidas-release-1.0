@@ -36,7 +36,7 @@ public class FragmentProdutos extends Fragment implements ServicosListener {
         produtos1.setClassificacao("https://i.ibb.co/LrzVM0Q/proibido-menores18-logo.png");
         produtos1.setDescricao("Os whiskeys da família Jack Daniel`s diferenciam-se pelo cuidadoso processo de elaboração. O envelhecimento em Barris de Carvalho novos, aliado ao clima muito especial do Tennessee, lhe confere um sabor suave e marcante. Permanecendo fiel a esta receita, as pessoas podem desfrutar do mesmo whiskey que ganhou sete medalhas de ouro internacionais, quando em 1904 foi homenageado como sendo \"o melhor whiskey do mundo");
         produtos1.setId("1L");
-        produtos1.setValor("R$ 105,00");
+        produtos1.setValor("R$ 110,00");
         produtosArrayList.add(produtos1);
 
         Produtos produtos2 = new Produtos();
@@ -126,7 +126,7 @@ public class FragmentProdutos extends Fragment implements ServicosListener {
         produtos11.setClassificacao("https://i.ibb.co/GFSJdjD/classificacao-livre-logo.png");
         produtos11.setDescricao("Red Bull Energy Drink foi desenvolvido especialmente para momentos de atividade intensa ou quando precisar de energia. Graças a uma combinação única de ingredientes Red Bull Energy Drink vitaliza corpo e mente.");
         produtos11.setId("250ml");
-        produtos11.setValor("R$ 7,00");
+        produtos11.setValor("R$ 8,00");
         produtosArrayList.add(produtos11);
 
         Produtos produtos12 = new Produtos();

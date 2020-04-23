@@ -33,18 +33,18 @@ public class FragmentCombos extends Fragment implements PromocoesListener {
         combos1.setNome("Jack Daniel's + Red Bull + Gelo de Coco");
         combos1.setImagem("https://i.ibb.co/thJKZdL/jackdaniels-combo-logo.png");
         combos1.setDescricao("Jack Daniel's. \n  Graduação alcoólica: 40% \n Volume: 1000 ml (vidro).");
-        combos1.setValor("R$ 150,00");
+        combos1.setValor("R$ 155,00");
         combos1.setEnergetico("+ 4un - Red Bull 250ml");
-        combos1.setGelo("+ 4un - Gelo de Coco (Maracujá)");
+        combos1.setGelo("+ 5un - Gelo de Coco (Maracujá)");
         combosArrayList.add(combos1);
 
         Combos combos2 = new Combos();
         combos2.setNome("Red Label + Red Bull + Gelo de Coco");
         combos2.setImagem("https://i.ibb.co/tYyVt5W/redlabelredbull-combo-logo.png");
         combos2.setDescricao("Red Label. \n  Graduação alcoólica: 40% \n Volume: 1000 ml (vidro).");
-        combos2.setValor("R$ 120,00");
+        combos2.setValor("R$ 125,00");
         combos2.setEnergetico("+ 4un - Red Bull 250ml");
-        combos2.setGelo("+ 4un - Gelo de Coco (Maracujá)");
+        combos2.setGelo("+ 5un - Gelo de Coco (Maracujá)");
         combosArrayList.add(combos2);
 
         Combos combos3 = new Combos();
@@ -52,7 +52,7 @@ public class FragmentCombos extends Fragment implements PromocoesListener {
         combos3.setImagem("https://i.ibb.co/dm1K8NP/redlabelvibe-combo-logo.png");
         combos3.setDescricao("Red Label. \n  Graduação alcoólica: 40% \n Volume: 1000 ml (vidro).");
         combos3.setEnergetico("+ Energético Vibe 2 L");
-        combos3.setGelo("+ 4un - Gelo de Coco (Maracujá)");
+        combos3.setGelo("+ 5un - Gelo de Coco (Maracujá)");
         combos3.setValor("R$ 90,00");
         combosArrayList.add(combos3);
 
@@ -61,8 +61,8 @@ public class FragmentCombos extends Fragment implements PromocoesListener {
         combos4.setImagem("https://i.ibb.co/Vj3SG0r/whitehorseredbull-combo-logo.png");
         combos4.setDescricao("White Horse. \n  Graduação alcoólica: 40% \n Volume: 1000 ml (vidro).");
         combos4.setEnergetico("+ 4un - Red Bull 250ml");
-        combos4.setGelo("+ 4un - Gelo de Coco (Maracujá)");
-        combos4.setValor("R$ 100,00");
+        combos4.setGelo("+ 5un - Gelo de Coco (Maracujá)");
+        combos4.setValor("R$ 110,00");
 
         combosArrayList.add(combos4);
 
@@ -71,7 +71,7 @@ public class FragmentCombos extends Fragment implements PromocoesListener {
         combos5.setImagem("https://i.ibb.co/ftpQ3Mk/whitehorsevibe-combo-logo.png");
         combos5.setDescricao("White Horse. \n  Graduação alcoólica: 40% \n Volume: 1000 ml (vidro).");
         combos5.setEnergetico("+ Energético Vibe 2 L");
-        combos5.setGelo("+ 4un - Gelo de Coco (Maracujá)");
+        combos5.setGelo("+ 5un - Gelo de Coco (Maracujá)");
         combos5.setValor("R$ 82,00");
         combosArrayList.add(combos5);
 
@@ -80,8 +80,8 @@ public class FragmentCombos extends Fragment implements PromocoesListener {
         combos6.setImagem("https://i.ibb.co/QFrSgvf/smirnoffredbull-combo-logo.png");
         combos6.setDescricao("Smirnoff. \n  Graduação alcoólica: 37,5% \n Volume: 998 ml (vidro).");
         combos6.setEnergetico("+ 4un - Red Bull 250ml");
-        combos6.setGelo("+ 4un - Gelo de Coco (Maracujá)");
-        combos6.setValor("R$ 80,00");
+        combos6.setGelo("+ 5un - Gelo de Coco (Maracujá)");
+        combos6.setValor("R$ 85,00");
         combosArrayList.add(combos6);
 
         Combos combos7 = new Combos();
@@ -89,8 +89,8 @@ public class FragmentCombos extends Fragment implements PromocoesListener {
         combos7.setImagem("https://i.ibb.co/tDGcns4/smirnoffvibe-combo-logo.png");
         combos7.setDescricao("Smirnoff. \n  Graduação alcoólica: 37,5% \n Volume: 998 ml (vidro).");
         combos7.setEnergetico("+ Energético Vibe 2 L");
-        combos7.setGelo("+ 4un - Gelo de Coco (Maracujá)");
-        combos7.setValor("R$ 50,00");
+        combos7.setGelo("+ 5un - Gelo de Coco (Maracujá)");
+        combos7.setValor("R$ 52,00");
         combosArrayList.add(combos7);
 
 

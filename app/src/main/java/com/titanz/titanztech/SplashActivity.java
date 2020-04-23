@@ -38,6 +38,6 @@ public class SplashActivity extends AppCompatActivity {
 
     private void setupImageSplash(){
 
-        Picasso.get().load("https://i.ibb.co/h1tjBpC/logo.png").into(splashImageView);
+        Picasso.get().load("https://i.ibb.co/KNSK8vh/adega-do-bigao.png").into(splashImageView);
     }
 }
